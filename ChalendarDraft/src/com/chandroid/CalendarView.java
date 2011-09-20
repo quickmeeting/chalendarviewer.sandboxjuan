@@ -41,7 +41,7 @@ public class CalendarView extends LinearLayout {
 	    eventContainerParams.weight = .25f;
 	    eventContainerParams.leftMargin = 5;
 	    eventContainerParams.rightMargin = 5;
-	    setLayoutParams(eventContainerParams);
+	    eventContainer.setLayoutParams(eventContainerParams);
 	    
 	    addView(title);
 	    addView(eventContainer);

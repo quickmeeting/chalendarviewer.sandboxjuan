@@ -35,8 +35,8 @@ public class ChalendarDraftActivity extends Activity implements OnClickListener 
         calendars.add(new CalendarView(this, "Sala 3"));
         calendars.add(new CalendarView(this, "Sala 4"));
         
-        for(LinearLayout l: calendars) {
-        	mainLayout.addView(l);
+        for(CalendarView c: calendars) {
+        	mainLayout.addView(c);
         }
         
         calendars.get(0).addEvent(new EventView(this, "8:00 - 10:00 \nP-722: Revisi—n"));
