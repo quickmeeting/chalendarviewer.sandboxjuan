@@ -20,14 +20,15 @@ public class CalendarView extends LinearLayout {
 		this.calendarId = calendarId;
 		
 		setOrientation(LinearLayout.VERTICAL);  
-	    LinearLayout.LayoutParams calendarParams = new LinearLayout.LayoutParams(LinearLayout.LayoutParams.FILL_PARENT, LinearLayout.LayoutParams.FILL_PARENT);
+		setGravity(Gravity.CENTER);
+		LinearLayout.LayoutParams calendarParams = new LinearLayout.LayoutParams(LinearLayout.LayoutParams.FILL_PARENT, LinearLayout.LayoutParams.FILL_PARENT);
 	    calendarParams.weight = .25f;
 	    calendarParams.leftMargin = 5;
 	    calendarParams.rightMargin = 5;
 	    setLayoutParams(calendarParams);
 		
 	    title = new TextView(context);
-	    title.setTextSize(60);
+	    title.setTextSize(50);
 	    title.setText(calendarId);
 	    title.setGravity(Gravity.CENTER);
 	    LinearLayout.LayoutParams titleParams = new LinearLayout.LayoutParams(LinearLayout.LayoutParams.WRAP_CONTENT, LinearLayout.LayoutParams.WRAP_CONTENT);
